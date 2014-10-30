@@ -2,7 +2,7 @@
 <section class="card card-story card-<%= @slug %>" role="region" itemscope itemtype="http://schema.org/WebPage">
     <h3 itemprop="name"><%= @name %></h3>
     <div class="description" itemprop="description">
-      <p>The <strong><a href="<%= @site.url %>/polyfills/">polyfills</a></strong> enable Web Components
+      <p>The webcomponent.js <strong><a href="<%= @site.url %>/polyfills/">polyfills</a></strong> enable Web Components
       in (evergreen) browsers that lack native support.</p>
       <p class="card-bower-install">
       <strong>Install with <a href="http://bower.io">Bower</a></strong>
@@ -13,7 +13,7 @@
           <a href="https://github.com/PolymerLabs/webcomponents/archive/master.zip" class="card-download-button">
             Download webcomponents.js
           </a>
-          <span class="filesize">0.4.3 (130KB, 40KB gzipped)</span>
+          <span class="filesize">0.5 (130KB, 40KB gzipped)</span>
         </p>
       </p>
     </div>
