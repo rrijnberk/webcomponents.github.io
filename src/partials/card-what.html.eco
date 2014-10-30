@@ -13,7 +13,7 @@
           <a href="https://github.com/PolymerLabs/webcomponents/archive/master.zip" class="card-download-button">
             Download webcomponents.js
           </a>
-          <span class="filesize">0.5 (130KB, 40KB gzipped)</span>
+          <span class="filesize">0.5 (106KB minified, 30KB gzipped)</span>
         </p>
       </p>
     </div>
