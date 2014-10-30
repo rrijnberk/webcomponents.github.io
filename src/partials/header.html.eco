@@ -9,7 +9,7 @@
 
     <!-- for Google -->
     <meta name="description" content="<%= @getDescription() %>">
-    <meta name="author" content="The Community">
+    <meta name="author" content="The WebComponents.org Community">
     <meta name="application-name" content="">
 
     <!-- for Facebook -->
