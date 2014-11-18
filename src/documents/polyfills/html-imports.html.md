@@ -7,9 +7,9 @@ layout: polyfills
 
 ### Why HTML Imports?
 
-This webcomponents.js repository contains a Javascript polyfill for the [HTML Imports](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/imports/index.html) specification.
+This webcomponents.js repository contains a Javascript polyfill for the [HTML Imports](http://w3c.github.io/webcomponents/spec/imports/) specification.
 
-HTML Imports are a way to include and reuse HTML documents in other HTML documents. As `<script>` tags let authors include external Javascript in their pages, imports let authors load full HTML resources.  In particular, imports let authors include [Custom Element](https://github.com/Polymer/CustomElements) definitions from external URLs.
+HTML Imports are a way to include and reuse HTML documents in other HTML documents. As `<script>` tags let authors include external Javascript in their pages, imports let authors load full HTML resources.  In particular, imports let authors include [Custom Element](/polyfills/custom-elements.html) definitions from external URLs.
 
 ### Basic usage
 
@@ -21,12 +21,9 @@ For HTML imports use the `import` relation on a standard `<link>` tag, for examp
 
 ### Getting Started
 
-Include the `html-imports.js` or `html-imports.min.js` (minified) file in your project.
+Include the `webcomponents.js` file in your project.
 
-    <script src="HTMLImports/html-imports.js"></script>
-
-`html-imports.js` is the debug loader and uses `document.write` to load additional modules. 
-Use the minified version (`html-imports.min.js`) if you need to load the file dynamically.
+    <script src="webcomponentsjs/webcomponents.js"></script>
 
 ### Polyfill Notes
 
@@ -42,11 +39,11 @@ Example:
     });
     </script>
 
-The polyfill loads linked stylesheets, external scripts, and nested HTML imports, but does not parse any data in the loaded resources. For parsing imports, combine HTML Imports with  [Custom Elements](https://github.com/Polymer/CustomElements). As long as the HTML Imports is loaded first, the Custom Elements polyfill will detect it, and process all imports when `HTMLImportsLoaded` event fires.
+The polyfill loads linked stylesheets, external scripts, and nested HTML imports, but does not parse any data in the loaded resources. For parsing imports, combine HTML Imports with  [Custom Elements](/polyfills/custom-elements.html). As long as the HTML Imports is loaded first, the Custom Elements polyfill will detect it, and process all imports when `HTMLImportsLoaded` event fires.
 
 #### The WebComponentsReady event
 
-Under native imports, `<script>` tags in the main document block the loading of imports. This is to ensure the imports have loaded and any registered elements in them have been upgraded. This native behavior is difficult to polyfill so the [HTML Imports polyfill](https://github.com/Polymer/HTMLImports) doesn't try. Instead the `WebComponentsReady` event is a stand in for this behavior:
+Under native imports, `<script>` tags in the main document block the loading of imports. This is to ensure the imports have loaded and any registered elements in them have been upgraded. This native behavior is difficult to polyfill so the HTML Imports polyfill doesn't try. Instead the `WebComponentsReady` event is a stand in for this behavior:
 
     <script>
       window.addEventListener('WebComponentsReady', function(e) {
@@ -60,4 +57,4 @@ Under native imports, `<script>` tags in the main document block the loading of 
 
 ## Tools & Testing
 
-For running tests or building minified files, consult the [tooling information](http://polymer-project.org/resources/tooling-strategy.html).
+For running tests or building minified files, consult the  [Manually Builds](https://github.com/WebComponents/webcomponentsjs#manually-building) guide.
