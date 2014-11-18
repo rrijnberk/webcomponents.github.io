@@ -59,4 +59,4 @@ For information on how to build each polyfill library independently, see [Manual
 
 ## Next steps
 
-`webcomponents.js` is a wonderful foundation for working with Web Components in a cross-browser fashion. If you're ready to start building your own elements, and would like to learn about the additional features `webcomponents.js`, read our guide on Custom Elements.
+`webcomponents.js` is a wonderful foundation for working with Web Components in a cross-browser fashion. If you're ready to start building your own elements, and would like to learn about the additional features `webcomponents.js`, read our guide on [Custom Elements](/polyfills/custom-elements.html).
