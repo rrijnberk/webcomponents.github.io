@@ -5,23 +5,22 @@ layout: polyfills
 
 ## Introduction
 
-webcomponents.js builds on top of the upcoming web components technologies, but they don't yet ship in all browsers.
+[webcomponents.js](https://github.com/WebComponents/webcomponents.js) builds on top of the upcoming web components technologies, but they don't yet ship in all browsers.
 
-It is a collection of libraries (or “polyfills”) for new web technologies that haven’t shipped yet across all browsers. webcomponents.js makes it possible for developers to use these standards today across all modern browsers. As these technologies are implemented in browsers, the polyfills will shrink and you'll gain the benefits of native implementations. `webcomponents.js` automatically detects native support and switches to the fast path when available. Your elements seamlessly start relying on the native stuff--and get faster in the process.
+webcomponents.js makes it possible for developers to use these standards today across all modern browsers. As these technologies are implemented in browsers, the polyfills will shrink and you'll gain the benefits of native implementations. `webcomponents.js` automatically detects native support and switches to the fast path when available. Your elements seamlessly start relying on the native stuff--and get faster in the process.
 
 Although most developers will want to use everything in `webcomponents.js`, the polyfills are designed to be used separately, as well. They're available independently and can be built standalone. For example, Mozilla's [x-tags](http://www.x-tags.org/) and Brick projects use a subset of the `webcomponents.js` polyfills.
 
-**Note**: The `webcomponents.js` polyfill layer is no longer needed for browsers that fully implement the Web Components APIs, such as Chrome 36+.  This means the total payload for using Polymer on your site, for fully-compliant browsers, is a mere 32kb of `polymer.js`.
-{: .alert alert-info}
+**Note**: The `webcomponents.js` polyfill layer is no longer needed for browsers that fully implement the Web Components APIs, such as Chrome 36+.
 
 ## What's in webcomponents.js?
 
-The platform layer is a bundle that includes the following libraries:
+The polyfills are a bundle that includes the following libraries:
 
 - Web Components
-  - [Shadow DOM](/platform/shadow-dom.html). Encapsulate DOM subtrees and the associated CSS.
-  - [HTML Imports](/platform/html-imports.html). Load element definitions and other resources declaratively.
-  - [Custom Elements](/platform/custom-elements.html) . Define new elements in HTML.
+  - [Shadow DOM](/polyfills/shadow-dom.html). Encapsulate DOM subtrees and the associated CSS.
+  - [HTML Imports](/polyfills/html-imports.html). Load element definitions and other resources declaratively.
+  - [Custom Elements](/polyfills/custom-elements.html) . Define new elements in HTML.
 - DOM
   - [URL](https://github.com/Polymer/URL). Parse URLs in JavaScript.
   - [WeakMap](https://github.com/Polymer/WeakMap). Shim for ES6 WeakMap type.
@@ -38,9 +37,8 @@ Then, include `webcomponents.js` as you would any other script:
     <script src="bower_components/webcomponents/webcomponents.js"></script>
 
 **Note**: Due to the nature of some of the polyfills, to maximize compatibility with other libraries, make sure that `webcomponents.js` is the first script tag in your document's `<head>`.
-{: .alert alert-info}
 
-Once included, you can use [HTML Imports](/platform/html-imports.html), [Custom Elements](/platform/custom-elements.html), [Shadow DOM](/platform/shadow-dom.html), and other emerging standards within your app. For example, to use a webcomponents.js element, just import it using an HTML Import:
+Once included, you can use HTML Imports, Custom Elements, Shadow DOM, and other emerging standards within your app. For example, to use a webcomponents.js element, just import it using an HTML Import:
 
     <link rel="import"
           href="bower_components/paper-tabs/paper-tabs.html">
