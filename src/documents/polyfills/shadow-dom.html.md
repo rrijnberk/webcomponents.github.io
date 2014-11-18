@@ -14,7 +14,7 @@ layout: polyfills
 
 ### Shadow DOM subtrees
 
-Shadow DOM allows a single node to express three subtrees: _light DOM_, _shadow DOM_, and _composed DOM_.
+[Shadow DOM](http://w3c.github.io/webcomponents/spec/shadow/) allows a single node to express three subtrees: _light DOM_, _shadow DOM_, and _composed DOM_.
 
 Together, the light DOM and shadow DOM are referred to as the _logical DOM_. This is the DOM that the developer interacts with. The composed DOM is what the browser sees and uses to render the pixels on the screen.
 
@@ -43,7 +43,6 @@ Shadow DOM is internal to the element and hidden from the end-user.
 Its nodes are not children of `<my-custom-element>`.
 
 **Note:** Shadow roots are represented as a `#document-fragment` in the DevTools.
-{: .alert .alert-info }
 
 **Composed (rendered) DOM**
 
@@ -62,7 +61,17 @@ Shadow DOM renders them as if they are. In this way, the user can manipulate lig
 ## Polyfill details
 
 A polyfill to provide Shadow DOM functionality in browsers that don't
-support it natively. This section explains how a proper (native) implementation
+support it natively. 
+
+Include the `ShadowDOM.js` or `ShadowDOM.min.js` (minified) file in your project.
+
+    <script src="webcomponentsjs/ShadowDOM.js"></script>
+
+Alternatively, you can directly use `webcomponents.js` (or the minified `webcomponents.min.js` file) in your project.
+
+## Polyfill notes
+
+This section explains how a proper (native) implementation
 differs from our polyfill implementation.
 
 ### Wrappers
@@ -140,4 +149,4 @@ To support this kind of behavior the event dispatching in the browser has to be 
 
 ## Tools & Testing
 
-For running tests or building minified files, consult the  [Manually Builds](https://github.com/WebComponents/webcomponentsjs#manually-building) guide.
+For running tests or building minified files, consult the [Manual Builds](https://github.com/WebComponents/webcomponentsjs#manually-building) guide.
