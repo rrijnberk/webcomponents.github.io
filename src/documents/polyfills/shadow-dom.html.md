@@ -5,12 +5,12 @@ layout: polyfills
 
 ## Learn the tech
 
-### Basic usage
+### Why Shadow DOM?
 
-    var el = document.createElement('div');
-    var shadow = el.createShadowRoot();
-    shadow.innerHTML = '<content select="q"></content>';
-    document.body.appendChild(el);
+Shadow DOM addresses the lack of true DOM tree encapsulation when building components. With Shadow DOM, elements can get a new kind of node associated with them. This new kind of node is called a shadow root. An element that has a shadow root associated with it is called a shadow host. 
+
+The content of a shadow host isn’t rendered; the content of the shadow root is rendered instead.
+
 
 ### Shadow DOM subtrees
 
@@ -41,6 +41,13 @@ itself.
 
 Shadow DOM is internal to the element and hidden from the end-user.
 Its nodes are not children of `<my-custom-element>`.
+
+### Basic usage
+
+    var el = document.createElement('div');
+    var shadow = el.createShadowRoot();
+    shadow.innerHTML = '<content select="q"></content>';
+    document.body.appendChild(el);
 
 **Note:** Shadow roots are represented as a `#document-fragment` in the DevTools.
 
