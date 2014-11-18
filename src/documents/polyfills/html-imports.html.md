@@ -7,9 +7,9 @@ layout: polyfills
 
 ### Why HTML Imports?
 
-This webcomponents.js repository contains a Javascript polyfill for the [HTML Imports](http://w3c.github.io/webcomponents/spec/imports/) specification.
+This webcomponents.js repository contains a JavaScript polyfill for the [HTML Imports](http://w3c.github.io/webcomponents/spec/imports/) specification.
 
-HTML Imports are a way to include and reuse HTML documents in other HTML documents. As `<script>` tags let authors include external Javascript in their pages, imports let authors load full HTML resources.  In particular, imports let authors include [Custom Element](/polyfills/custom-elements.html) definitions from external URLs.
+HTML Imports are a way to include and reuse HTML documents in other HTML documents. As `<script>` tags let authors include external JavaScript in their pages, imports let authors load full HTML resources.  In particular, imports let authors include [Custom Element](/polyfills/custom-elements.html) definitions from external URLs.
 
 ### Basic usage
 
@@ -21,9 +21,11 @@ For HTML imports use the `import` relation on a standard `<link>` tag, for examp
 
 ### Getting Started
 
-Include the `webcomponents.js` file in your project.
+Include the `HTMLImports.js` or `HTMLImports.min.js` (minified) file in your project.
 
-    <script src="webcomponentsjs/webcomponents.js"></script>
+    <script src="webcomponentsjs/HTMLImports.js"></script>
+
+Alternatively, you can directly use `webcomponents.js` (or the minified `webcomponents.min.js` file) in your project.
 
 ### Polyfill Notes
 
@@ -57,4 +59,4 @@ Under native imports, `<script>` tags in the main document block the loading of 
 
 ## Tools & Testing
 
-For running tests or building minified files, consult the  [Manually Builds](https://github.com/WebComponents/webcomponentsjs#manually-building) guide.
+For running tests or building minified files, consult the [Manual Builds](https://github.com/WebComponents/webcomponentsjs#manually-building) guide.
