@@ -5,7 +5,7 @@ layout: polyfills
 
 ## Introduction
 
-[webcomponents.js](https://github.com/WebComponents/webcomponents.js) is a set of polyfills built on top of the Web Component specifications. It makes it possible for developers to use these standards today across all modern browsers.
+[webcomponents.js](https://github.com/WebComponents/webcomponents.js) is a set of polyfills built on top of the **Web Components** specifications. It makes it possible for developers to use these standards today across all modern browsers.
 
 As these technologies are implemented in browsers, the polyfills will shrink and you'll gain the benefits of native implementations. `webcomponents.js` automatically detects native support and switches to the fast path when available. Your elements seamlessly start relying on the native stuff--and get faster in the process.
 
@@ -18,19 +18,21 @@ Although most developers will want to use everything in `webcomponents.js`, the 
 The polyfills are a bundle that includes the following libraries:
 
 - Web Components
-  - [Shadow DOM](/polyfills/shadow-dom.html). Encapsulate DOM subtrees and the associated CSS.
-  - [HTML Imports](/polyfills/html-imports.html). Load element definitions and other resources declaratively.
   - [Custom Elements](/polyfills/custom-elements.html) . Define new elements in HTML.
+  - [HTML Imports](/polyfills/html-imports.html). Load element definitions and other resources declaratively.
+  - [Shadow DOM](/polyfills/shadow-dom.html). Encapsulate DOM subtrees and the associated CSS.
 - DOM
   - [URL](https://github.com/Polymer/URL). Parse URLs in JavaScript.
   - [WeakMap](https://github.com/Polymer/WeakMap). Shim for ES6 WeakMap type.
   - [Mutation Observers](https://github.com/Polymer/MutationObservers). Efficiently watch for changes in the DOM.
 
+**Note**: A lighter `webcomponents-lite.js` build is included with the default download package including support for just Custom Elements and HTML Imports if you don't require Shadow DOM. You can [generate](https://github.com/WebComponents/webcomponentsjs#manually-building) custom builds supporting any combination of Web Component features too.
+
 ## Installation & usage
 
 To start using these features today, first download `webcomponents.js` using Bower:
 
-    bower install --save WebComponents/webcomponents.js
+    bower install --save webcomponents/webcomponents.js
 
 Then, include `webcomponents.js` as you would any other script:
 
