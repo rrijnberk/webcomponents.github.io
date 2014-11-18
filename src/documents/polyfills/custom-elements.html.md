@@ -7,7 +7,7 @@ layout: polyfills
 
 ### Why Custom Elements?
 
-Custom Elements let authors define their own elements. Authors associate JavaScript code with custom tag names, and then use those custom tag names as they would any standard tag.
+[Custom Elements](http://w3c.github.io/webcomponents/spec/custom/) let authors define their own HTML elements. Authors associate JavaScript code with custom tag names, and then use those custom tag names as they would any standard tag.
 
 For example, after registering a special kind of button called `super-button`, use the super button just like this:
 
@@ -90,12 +90,11 @@ Use the `createdCallback` to do initialization work that might otherwise be in a
 
 ### Getting Started
 
-Include the `custom-elements.js` or `custom-elements.min.js` (minified) file in your project.
+Include the `CustomElements.js` or `CustomElements.min.js` (minified) file in your project.
 
-    <script src="CustomElements/custom-elements.js"></script>
+    <script src="webcomponentsjs/CustomElements.js"></script>
 
-`custom-elements.js` is the debug loader and uses `document.write` to load additional modules. 
-Use the minified version (`custom-elements.min.js`) if you need to load the file dynamically.
+Alternatively, you can directly use `webcomponents.js` (or the minified `webcomponents.min.js` file) in your project.
 
 ### Polyfill Notes
 
@@ -126,4 +125,4 @@ The Custom Elements specification is still under discussion. The polyfill implem
 
 ## Tools & Testing
 
-For running tests or building minified files, consult the  [Manually Builds](https://github.com/WebComponents/webcomponentsjs#manually-building) guide.
+For running tests or building minified files, consult the [Manual Builds](https://github.com/WebComponents/webcomponentsjs#manually-building) guide.
