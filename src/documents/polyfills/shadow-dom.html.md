@@ -7,14 +7,13 @@ layout: polyfills
 
 ### Why Shadow DOM?
 
-Shadow DOM addresses the lack of true DOM tree encapsulation when building components. With Shadow DOM, elements can get a new kind of node associated with them. This new kind of node is called a shadow root. An element that has a shadow root associated with it is called a shadow host. 
+[Shadow DOM](http://w3c.github.io/webcomponents/spec/shadow/) addresses the lack of true DOM tree encapsulation when building components. With Shadow DOM, elements can get a new kind of node associated with them. This new kind of node is called a shadow root. An element that has a shadow root associated with it is called a shadow host. 
 
 The content of a shadow host isn’t rendered; the content of the shadow root is rendered instead.
 
-
 ### Shadow DOM subtrees
 
-[Shadow DOM](http://w3c.github.io/webcomponents/spec/shadow/) allows a single node to express three subtrees: _light DOM_, _shadow DOM_, and _composed DOM_.
+Shadow DOM allows a single node to express three subtrees: _light DOM_, _shadow DOM_, and _composed DOM_.
 
 Together, the light DOM and shadow DOM are referred to as the _logical DOM_. This is the DOM that the developer interacts with. The composed DOM is what the browser sees and uses to render the pixels on the screen.
 
