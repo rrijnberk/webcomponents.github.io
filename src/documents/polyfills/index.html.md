@@ -5,9 +5,11 @@ layout: polyfills
 
 ## Introduction
 
-[webcomponents.js](https://github.com/WebComponents/webcomponents.js) builds on top of the upcoming web components technologies, but they don't yet ship in all browsers.
+[webcomponents.js](https://github.com/WebComponents/webcomponents.js) is a set of polyfills build on top of the Web Component specifications, but they don't yet ship in all browsers.
 
-webcomponents.js makes it possible for developers to use these standards today across all modern browsers. As these technologies are implemented in browsers, the polyfills will shrink and you'll gain the benefits of native implementations. `webcomponents.js` automatically detects native support and switches to the fast path when available. Your elements seamlessly start relying on the native stuff--and get faster in the process.
+webcomponents.js makes it possible for developers to use these standards today across all modern browsers.
+
+As these technologies are implemented in browsers, the polyfills will shrink and you'll gain the benefits of native implementations. `webcomponents.js` automatically detects native support and switches to the fast path when available. Your elements seamlessly start relying on the native stuff--and get faster in the process.
 
 Although most developers will want to use everything in `webcomponents.js`, the polyfills are designed to be used separately, as well. They're available independently and can be built standalone. For example, Mozilla's [x-tags](http://www.x-tags.org/) and Brick projects use a subset of the `webcomponents.js` polyfills.
 
