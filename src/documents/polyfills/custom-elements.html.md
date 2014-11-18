@@ -123,6 +123,7 @@ The Custom Elements specification is still under discussion. The polyfill implem
 
 `createdCallback` is invoked _synchronously_ with element instantiation, the other callbacks are called _asyncronously_. The asynchronous callbacks generally use the MutationObserver timing model, which means they are called before layouts, paints, or other triggered events, so the developer need not worry about flashing content or other bad things happening before the callback has a chance to react to changes.
 
+
 ## Tools & Testing
 
-For running tests or building minified files, consult the [tooling information](http://polymer-project.org/resources/tooling-strategy.html).
+For running tests or building minified files, consult the  [Manually Builds](https://github.com/WebComponents/webcomponentsjs#manually-building) guide.

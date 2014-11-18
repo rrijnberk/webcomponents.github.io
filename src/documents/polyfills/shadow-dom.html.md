@@ -136,3 +136,8 @@ To support this kind of behavior the event dispatching in the browser has to be 
 * `document`, `window`, `document.body`, `document.head` and others are non configurable and cannot be overridden. We are trying to make these work as seamlessly as possible but there will doubtlessly be cases where there will be problems; for those cases you can use `wrap` and `unwrap` to get unblocked.
 * Cross window/frame access is not implemented.
 * CSS `:host()` rules can only have (at most) 1-level of nested parentheses in its argument selector. For example, `:host(.zot)` and `:host(.zot:not(.bar))` both work, but `:host(.zot:not(.bar:nth-child(2)))` does not.
+
+
+## Tools & Testing
+
+For running tests or building minified files, consult the  [Manually Builds](https://github.com/WebComponents/webcomponentsjs#manually-building) guide.
