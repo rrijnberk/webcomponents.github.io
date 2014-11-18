@@ -38,6 +38,10 @@ Then, include `webcomponents.js` as you would any other script:
 
     <script src="bower_components/webcomponents/webcomponents.js"></script>
 
+Alternatively, you can install the Web Component polyfills using [npm](http://npmjs.org):
+
+    npm install --save webcomponents.js
+
 **Note**: Due to the nature of some of the polyfills, to maximize compatibility with other libraries, make sure that `webcomponents.js` is the first script tag in your document's `<head>`.
 
 Once included, you can use HTML Imports, Custom Elements, Shadow DOM, and other emerging standards within your app. For example, to use a webcomponents.js element, just import it using an HTML Import:
